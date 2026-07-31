@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mark Moeller — Research</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<audio id="name-audio" src="../markmoeller.mp3"></audio>
+<audio id="name-audio" src="markmoeller.mp3"></audio>
 <div class="page">
     <header class="header">
-        <img class="portrait" src="../img/mark.png" alt="Photo of Mark Moeller">
+        <img class="portrait" src="img/markmoeller-rectrail.jpg" alt="Photo of Mark Moeller">
         <div class="header-text">
             <h1>Mark Moeller
                 <button class="speak-button" onclick="document.getElementById('name-audio').play()" aria-label="Hear name pronounced">🔊</button>
@@ -18,9 +19,9 @@
             <p class="contact"><a href="mailto:mmoeller@holycross.edu">mmoeller@holycross.edu</a></p>
             <nav class="site-nav">
                 <a href="index.html">Home</a>
-                <a href="research.html" class="active">Research</a>
+                <a href="research.html" class="active" aria-current="page">Research</a>
                 <a href="teaching.html">Teaching</a>
-                <a href="cv.html">CV</a>
+                <a href="pdf/cv.pdf" target="_blank" rel="noopener">CV</a>
             </nav>
         </div>
     </header>
@@ -38,21 +39,29 @@
             <p class="pub-title">Active Learning of Symbolic NetKAT Automata</p>
             <p class="pub-authors">Mark Moeller, Tiago Ferreira, Thomas Lu, Nate Foster, Alexandra Silva</p>
             <p class="pub-venue"><a href="https://pldi25.sigplan.org/">PLDI 2025</a></p>
-            <p class="pub-links">[<a href="../pdf/nkl.pdf">pdf</a>] [<a href="https://zenodo.org/records/15230071">artifact</a>]</p>
+            <p class="pub-links">[<a href="pdf/nkl.pdf" target="_blank" rel="noopener">pdf</a>] [<a href="https://zenodo.org/records/15230071">artifact</a>]</p>
         </div>
 
         <div class="pub">
             <p class="pub-title">KATch: A Fast Symbolic Verifier for NetKAT</p>
             <p class="pub-authors">Mark Moeller, Jules Jacobs, Olivier Savary Belanger, David Darais, Cole Schlesinger, Steffen Smolka, Nate Foster, Alexandra Silva</p>
             <p class="pub-venue"><a href="https://pldi24.sigplan.org/">PLDI 2024</a></p>
-            <p class="pub-links">[<a href="../pdf/katch.pdf">pdf</a>] [<a href="https://github.com/cornell-netlab/KATch">code</a>]</p>
+            <p class="pub-links">[<a href="pdf/katch.pdf" target="_blank" rel="noopener">pdf</a>] [<a href="https://github.com/cornell-netlab/KATch">code</a>]</p>
         </div>
 
         <div class="pub">
             <p class="pub-title">Automata Learning with an Incomplete Teacher</p>
             <p class="pub-authors">Mark Moeller, Thomas Wiener, Alaia Solko-Breslin, Caleb Koch, Nate Foster, Alexandra Silva</p>
             <p class="pub-venue"><a href="https://conf.researchr.org/home/ecoop-2023">ECOOP 2023</a></p>
-            <p class="pub-links">[<a href="../pdf/lstarblanks.pdf">pdf</a>] [<a href="https://github.com/cornell-pl/nerode-public">code</a>] [<a href="https://drops.dagstuhl.de/opus/volltexte/2023/18261">artifact</a>]</p>
+            <p class="pub-links">[<a href="pdf/lstarblanks.pdf" target="_blank" rel="noopener">pdf</a>] [<a href="https://github.com/cornell-pl/nerode-public">code</a>] [<a href="https://drops.dagstuhl.de/opus/volltexte/2023/18261">artifact</a>]</p>
+        </div>
+
+        <h2>Thesis</h2>
+
+        <div class="pub">
+            <p class="pub-title">Automata Learning for Network Verification</p>
+            <p class="pub-venue">PhD Thesis, Cornell University, 2026</p>
+            <p class="pub-links">[<a href="pdf/thesis.pdf" target="_blank" rel="noopener">pdf</a>]</p>
         </div>
     </main>
 </div>
