@@ -13,6 +13,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #222;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 .page {
@@ -77,3 +78,20 @@ a { color: var(--purple); }
 
 ul.teaching-list { padding-left: 20px; }
 ul.teaching-list ul { margin-top: 4px; }
+
+@media (max-width: 600px) {
+  body { padding: 20px 12px; }
+
+  .page { padding: 20px 18px; }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .portrait { width: 140px; height: 156px; }
+
+  .site-nav a { margin: 0 9px; display: inline-block; }
+}
