@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+
+\usepackage{tabularx,array}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{libertine}
+\usepackage{hyperref}
+
+\usepackage{todonotes}
+\newcommand{\mm}[1]{\todo[noinline,color=green]{\footnotesize MM\@: #1}}
+\newcommand{\mminline}[1]{\todo[inline,color=pink,caption={}]{\footnotesize MM\@: #1}}
+
+\usepackage{titlesec}
+
+%%\usepackage[bibstyle=numeric]{biblatex}
+%%\DefineBibliographyStrings{english}{
+  %%references = {Publications},
+%%}
+
+\bibliographystyle{ACM-Reference-Format}
+%%\renewcommand{\bibname}{Publications}
+%%\setcitestyle{numeric}
+
+%%\titleformat{\section}
+  %%{\normalfont\Large\bfseries} % Format of the section title (font, size, weight)
+  %%{\thesection}                 % How the section number appears
+  %%{1em}                         % Space between section number and title
+  %%{}                            % Commands before the title text
+  %%[{\titlerule[0.8pt]}]        % Commands after the title text (here, a horizontal rule)
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\sc} % Format of the section title (font, size, weight)
+  {\thesection}                 % How the section number appears
+  {1em}                         % Space between section number and title
+  {}                            % Commands before the title text
+  [{\titlerule[0.8pt]}]        % Commands after the title text (here, a horizontal rule)
+
+\title{\huge Mark Moeller}
+\date{}
+\author{mmoeller@holycross.edu}
+
+\begin{document}
+
+\maketitle
+
+%-------------------------------------------------------------------------------
+%       EDUCATION SECTION
+%-------------------------------------------------------------------------------
+
+\section*{Education}
+\begin{itemize}
+\item[] \textbf{Cornell University}, Ithaca NY \hfill{2020-2026}
+\\{\em PhD in Computer Science, in the Programming Languages research area, coadvised by Nate Foster and Alexandra Silva}
+
+\item[] \textbf{University of Pennsylvania}, Philadelphia PA \hfill{2012-2013}
+\\{\em MSE, Computer and Information Science}
+
+\item[] \textbf{United States Naval Academy}, Annapolis MD \hfill{2008-2012}
+\\{\em BS, Mathematics (Honors) and Computer Science}
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\section*{Teaching Experience}
+
+\begin{itemize}
+\item[] \textbf{College of the Holy Cross (Asst. Prof.)}
+
+\begin{itemize}
+\item[] \textbf{CSCI226 Computer Organization and Design}\hfill{Fall `26}
+\item[] \textbf{CSCI235 Analysis of Algorithms}\hfill{Fall `26}
+\end{itemize}
+
+\item[] \textbf{Cornell University (Instructor)}
+
+\begin{itemize}
+\item[] \textbf{CS2800 Mathematical Foundations of Computing} \hfill{Fall `25}\\
+{\em Topics include mathematical induction; logical proof; propositional and predicate calculus; sets, functions, and relations; graphs; combinatorics and discrete mathematics; basic probability theory; and finite-state machines. Approx. 280 students.}
+\end{itemize}
+
+\item[] \textbf{Cornell University (Teaching Assistant)}
+
+\begin{itemize}
+\item[] \textbf{CS3410 Computer Architecture}          \hfill{Fall `20, Spring `21}\\
+{\em Introduction to computer organization, systems programming and the
+hardware/software interface. Approx. 300 students in the course, 15-20 students
+in my discussion section.}
+
+\end{itemize}
+
+\item[] \textbf{United States Naval Academy (Instructor)}
+
+\begin{itemize}
+\item[] \textbf{SI413 Programming Languages}        \hfill{Fall `18}\\
+{\em Basic concepts underlying the design of modern programming languages including 
+types, control structures, abstraction, and inheritance. Approx. 20 students.}
+\item[] \textbf{SI340 Theory of Computing}          \hfill{Fall `18, `19$^1$} \\
+{\em Introduction to formal language theory and automata, including finite automata,
+regular expressions, context-free grammars, pushdown automata, and Turing
+machines. Approx. 20 students in '18, 40 students in '19.}
+\item[] \textbf{IC221 Systems Programming}          \hfill{Spring `19} \\
+{\em Fundamentals of the Unix Programming Interface using the C
+    programming language. Approx. 20 students.}
+\item[] \textbf{SI335 Computer Algorithms}          \hfill{Spring `19$^1$, `20$^1$} \\
+{\em Fundamentals of algorithms design and analysis, including algorithm design
+paradigms, runtime analysis, and correctness proofs. Course includes a study
+of classic algorithms using greedy methods, divide and conquer, dynamic
+programming, and graphs as well as an introduction to complexity theory. Approx. 60 students each year.}
+
+\textit{Note 1. Course coordinator}
+\end{itemize}
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+\section*{Professional Experience}
+\begin{itemize}
+\item[] \textbf{Assistant Professor}\hfill{2026-Present}\\
+\textit{The College of the Holy Cross, Worcester MA}\\
+
+\item[] \textbf{Research Engineering Intern} \hfill{Summers 2022, 2025}\\
+\textit{Galois Inc., Portland OR}
+\begin{itemize}
+    \item Pursued research in network verification and compilers on client-billable projects.
+\end{itemize}
+
+\item[] \textbf{Instructor} \hfill{2018-2020}\\
+\textit{United States Naval Academy, Annapolis MD}
+\begin{itemize}
+    \item Taught courses for Computer Science majors as instructor of record.
+    \item Served as academic advisor for 18 students.
+\end{itemize}
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+%%\nocite{*}
+%%\bibliography{refs}
+
+\section*{Publications}
+\begin{itemize}
+\item Mark Moeller, Tiago Ferreira, Thomas Lu, Nate Foster, Alexandra Silva.
+Active Learning of Symbolic NetKAT Automata.
+In PLDI 2025.
+\item Mark Moeller + Jules Jacobs, Olivier Savary Belanger, David Darais, Cole
+Schlesinger, Steffen Smolka, Nate Foster, Alexandra Silva.
+KATch: A Fast Symbolic Verifier for NetKAT.
+In PLDI 2024.
+\item Mark Moeller, Thomas Wiener, Alaia Solko-Breslin, Caleb Koch, Nate Foster, Alexandra Silva.
+Automata Learning with an Incomplete Teacher.
+In ECOOP 2023.
+\end{itemize}
+
+\section*{Service}
+
+\textbf{Seminar Organization}
+\begin{itemize}
+\item Upstate Programming Languages Seminar, August 2025. \href{https://www.cs.cornell.edu/upstate-pl}{https://www.cs.cornell.edu/upstate-pl/}.
+\item Programming Langauges Discussion Group (PLDG), Cornell's PL Research Seminar, 2022-2024. E.g.,
+\href{https://pl.cs.cornell.edu/pldg/2023sp/}{https://pl.cs.cornell.edu/pldg/2023sp/}
+\end{itemize}
+
+\section*{Fellowship}
+
+\textbf{John J. McMullen Fellow} \hfill{2012}\\
+{\em Awarded competitively for complete funding of Master's work, 2012-2013.}
+
+\thispagestyle{plain}
+
+%%\end{resume}
+\end{document}
